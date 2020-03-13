@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="container-fluid">
+       <div class="row"><br><br><br><br><br>
+         <div class="col-md-6 col-md-offset-3 text-center">
+            <div class="section-heading wow bounceInDown" data-wow-duration=".2s" data-wow-delay=".2s">
+                <h2 class="section-title"><b>Edit Your MESSAGE</b></h2>
+              <div class="border-bottom-now"></div>
+            </div>
+        </div><br><br><br><br><br><br><br><br><br><br>
+        <div class="row wow bounceInDown">
+          <div class="col-md-6 col-md-offset-3">
+            <form id="contactform" class="contact-form"  method="post">
+              <div class="row">
+               <div class="col-md-12"><input id="name"value="<%=info.name%>" type="text" class="form-control" name="name" placeholder="Name" required></div>
+
+
+
+                <div class="col-md-12"><br>
+                 <input type="text" id="subject" placeholder="Subject" value="<%=info.subject%>" class="form-control" name="subject" required>
+
+                </div>
+                  <div class="col-md-12"><br>
+                   <textarea id="message" rows="5"  name="details" value="<%=info.details%>" class="form-control" placeholder="Message" required></textarea>
+                  </div>
+                   <div class="col-md-12 text-center"><br><br>
+                     <button class="btn btn-success" type="submit">Submit Message</button>
+
+
+                   </div>
+
+            </div>
+
+          </form>
+
+         </div>
+
+        </div>
+
+
+
+       </div
+
+    </div>
+  </body>
+</html>
