@@ -9,7 +9,7 @@ var async = require('async');
 app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
-
+app.use(express.static('public'));
 
 mongoose.connect('mongodb+srv://admin-michael:admin123@cluster0-hddv9.mongodb.net/test2020DB',{useNewUrlParser:true,useUnifiedTopology: true});
 
@@ -90,6 +90,10 @@ app.post('/update/:id',function(req,res){
   });
   });
 
+
+app.get('/frontend',function(req,res){
+  res.render('frontend');
+});
 
 app.listen(process.env.PORT||3000,function(){
   console.log('app is running on 3000');
